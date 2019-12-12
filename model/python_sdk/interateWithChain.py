@@ -87,7 +87,6 @@ def sendTx(contractname, contractAddr, funcName, params):
         return print_receipt_logs_and_txoutput(tx_client, receipt, "", data_parser)
         # return result
     except Exception as e:
-        print(e)
         return "error"
 
 def inDebt(contractname, contractAddr):
